@@ -30,7 +30,7 @@ where
 ### Getting sample embeddings without fine-tuning
 
 ```
-python run_clustering.py
+python run_clustering.py --checkpoint_path /path/to/checkpoint --data_path /path/to/data --save_path /path/to/save
 ```
 
 ## Diagnosis 
