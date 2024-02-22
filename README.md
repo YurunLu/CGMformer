@@ -13,7 +13,7 @@ pip install -r requirements.txt
 
 ## Data processing
 
-Please refer to `processing_82_data.ipynb`、`processing_89_data.ipynb`、`processing_811_data.ipynb`、`build_vocab.ipynb` to process the CGM data into a format accepted by the model
+Different CGM data have different attributes, we recommend to refer to the `processing_82_data.ipynb`、`processing_89_data.ipynb`、`processing_811_data.ipynb`、`build_vocab.ipynb` to process your data, where the blood sugar data are labeled with the key "input_ids".
 
 ## Pre-training
 ### Pre-training CGMformer
