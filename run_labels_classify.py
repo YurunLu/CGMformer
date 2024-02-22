@@ -52,7 +52,7 @@ def main():
     torch.cuda.manual_seed_all(seed_val)
     
     
-    TOKEN_DICTIONARY_FILE = '/share/home/liangzhongming/930/CGMformer/data/8_11_data/token2id.pkl'
+    TOKEN_DICTIONARY_FILE = '/share/home/liangzhongming/930/CGMformer/data/8_11_data/token2id.pkl' # Repalce it with your token_dictionary
     with open(TOKEN_DICTIONARY_FILE, "rb") as f:
         token_dictionary = pickle.load(f)
     
@@ -93,13 +93,13 @@ def main():
     
     # set model parameters
     # max input size
-    max_input_size = 289
+    max_input_size = 289 # 288 + 'CLS'
     
     # # set training parameters
     # # max learning rate
-    # max_lr = 4.1e-4 # 4.1e-4 4e-6 # 5e-5
+    # max_lr = 4.1e-4 
     # # how many pretrained layers to freeze
-    # freeze_layers = 0 # 0
+    # freeze_layers = 0 
     # # number gpus
     # num_gpus = 1
     # # number cpu cores
@@ -109,7 +109,7 @@ def main():
     # # learning schedule
     # lr_schedule_fn = "cosine"
     # # warmup steps
-    # warmup_steps = 1385 # 100 1385
+    # warmup_steps = 1385 
     # # number of epochs
     # epochs = 20
     # optimizer = "adamw"
@@ -117,7 +117,7 @@ def main():
     
     
     # # Zhao multi-label
-    # max_lr = 4.0e-5 # 4.1e-4 4e-6 # 5e-5
+    # max_lr = 4.0e-5 
     # # how many pretrained layers to freeze
     # freeze_layers = 0 # 0
     # # number gpus
@@ -136,7 +136,7 @@ def main():
     
     
     # Zhao T1D/T2D complication
-    max_lr = 4e-4 # 4.1e-4 4e-6 # 5e-5
+    max_lr = 4e-4 
     # how many pretrained layers to freeze
     freeze_layers = 0 # 0
     # number gpus
@@ -155,7 +155,7 @@ def main():
     
     
     # # Zhao T1D/T2D linear
-    # max_lr = 4.0e-4 # 4.1e-4 4e-6 # 5e-5
+    # max_lr = 4.0e-4 
     # # how many pretrained layers to freeze
     # freeze_layers = 4 # 0
     # # number gpus
@@ -173,7 +173,7 @@ def main():
     # optimizer = "adamw"
     
     # # Zhao T1D/T2D full-finetune
-    # max_lr = 4.0e-4 # 4.1e-4 4e-6 # 5e-5
+    # max_lr = 4.0e-4 
     # # how many pretrained layers to freeze
     # freeze_layers = 0 # 0
     # # number gpus
@@ -229,7 +229,7 @@ def main():
         "learning_rate": max_lr,
         "do_train": True,
         "do_eval": True,
-        # # "evaluation_strategy": "epoch",
+        # "evaluation_strategy": "epoch",
         "evaluation_strategy": "steps",
         "eval_steps": logging_steps,
         # "save_strategy": "epoch",
