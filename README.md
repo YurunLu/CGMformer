@@ -36,7 +36,7 @@ python run_clustering.py --checkpoint_path /path/to/checkpoint --data_path /path
 ## Diagnosis 
 
 ```
-python run_labels_classify.py
+python run_labels_classify.py --checkpoint_path /path/to/checkpoint --train_path /path/to/train_data --test_path /path/to/test_data --output_path /path/to/save
 ```
 
 ## CGMformer_C
