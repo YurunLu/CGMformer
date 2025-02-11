@@ -1,7 +1,9 @@
 # CGMformer
 
-CGMformer : A generative pretrained transformer for predicting and decoding individual glucose dynamics from continuous glucose monitoring data 
+CGMformer : A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data.
 
+The article is available at:
+Yurun Lu, Dan Liu, Zhongming Liang, et al. A pretrained transformer model for decoding individual glucose dynamics from continuous glucose monitoring data. National Science Review https://doi.org/10.1093/nsr/nwaf039
 
 ## Installation
 
