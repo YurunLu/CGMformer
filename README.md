@@ -11,7 +11,9 @@ Yurun Lu, Dan Liu, Zhongming Liang, et al. A pretrained transformer model for de
 pip install -r requirements.txt
 ```
 
-
+```
+ conda install cudatoolkit=11.7 -c conda-forge
+```
 
 ## Data processing
 
