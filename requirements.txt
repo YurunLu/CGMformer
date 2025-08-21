@@ -1,7 +1,6 @@
 accelerate==0.24.1
-cudatoolkit==11.7
 datasets==2.14.6
-debugpy==1.8.0)
+debugpy==1.8.0
 deepspeed==0.13.2
 gensim==4.3.2
 ipykernel==6.26.0
